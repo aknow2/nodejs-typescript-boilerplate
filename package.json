@@ -1,0 +1,39 @@
+{
+  "name": "create-typescirpt-prj",
+  "version": "0.0.1",
+  "description": "Create simple Typescirpt boilerplate with ts-node",
+  "main": "./src/index.ts",
+  "author": "Tomoaki Kanayama",
+  "license": "MIT",
+  "scripts": {
+    "lint": "",
+    "start": "npx nodemon",
+    "test": "npx jest --watchAll",
+    "build": "npx ts-node node_modules/.bin/tslint -p . && npx tsc"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.5",
+    "@types/node": "^10.12.0",
+    "jest": "^23.6.0",
+    "jest-runner-tslint": "^1.0.5",
+    "nodemon": "^1.18.4",
+    "ts-jest": "^23.10.4",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.11.0",
+    "tslint-config-airbnb": "^5.11.0",
+    "tsutils": "^3.1.0",
+    "typescript": "^3.1.3"
+  },
+  "jest": {
+    "runner": "jest-runner-tslint",
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    },
+    "testRegex": "((\\.|/)(test))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "testEnvironment": "node"
+  }
+}
