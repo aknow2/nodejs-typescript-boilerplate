@@ -6,7 +6,6 @@
   "author": "Tomoaki Kanayama",
   "license": "MIT",
   "scripts": {
-    "lint": "",
     "start": "npx nodemon",
     "test": "npx jest --watchAll",
     "build": "npx ts-node node_modules/.bin/tslint -p . && npx tsc"
